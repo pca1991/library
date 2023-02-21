@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    status="warn" 日志框架本身的输出日志级别，可以修改为debug
+    monitorInterval="1800" 自动加载配置文件的间隔时间，不低于 1800秒；生产环境中修改配置文件，是热更新，无需重启应用
+ -->
+<Configuration status="WARN" monitorInterval="3600">
+    <!--
+      全局属性配置
+       使用时通过:${name}
+       -->
+    <properties>
+        <!-- 格式化输出：%date表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息，%n是换行符-->
+        <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
+        <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+        <!-- 定义日志存储的路径 -->
+        <property name="FILE_PATH" value="./logs" />
+        <property name="FILE_HISTORY_PATH" value="./logs/history" />
+        <property name="FILE_NAME" value="library" />
+    </properties>
+
+    <!-- 日志处理 -->
+    <Appenders>
+        <!-- 控制台输出 appender，SYSTEM_OUT输出黑色，SYSTEM_ERR输出红色 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+            <!--控制台只输出level及其以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+
+        <RollingRandomAccessFile name="info-log"
+                                 fileName="${FILE_PATH}/${FILE_NAME}.log"
+                                 filePattern="${FILE_HISTORY_PATH}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="200 MB"/>
+            </Policies>
+            <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件开始覆盖-->
+            <DefaultRolloverStrategy max="15"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <!-- logger 定义 -->
+    <Loggers>
+        <!-- 使用 rootLogger 配置 日志级别 level="info" -->
+        <Root level="info">
+            <AppenderRef ref="info-log" />
+            <AppenderRef ref="Console" />
+        </Root>
+        <Logger name="org.springframework">
+            <AppenderRef ref="Console" />
+        </Logger>
+    </Loggers>
+</Configuration>
