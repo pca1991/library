@@ -31,7 +31,7 @@
 ```
 
 ### 3. 启动应用
-1. 修改 resource/application-test.xml 中对应的redis、mysql的host/port配置
+1. 修改 resource/application-test.yml 中对应的redis、mysql的host/port配置
 2. 启动应用
 
 ### 4. 接口演示
