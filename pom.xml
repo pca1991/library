@@ -12,7 +12,7 @@
     <artifactId>library</artifactId>
     <version>0.0.1</version>
     <name>library</name>
-    <description>library</description>
+    <description>图书管理系统</description>
 
     <properties>
         <java.version>8</java.version>
