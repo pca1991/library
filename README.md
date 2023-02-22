@@ -10,7 +10,7 @@
 * Swagger3
 
 ## 项目部署
-### Mysql数据库（docker方式）
+### 1. Mysql数据库（docker方式）
 1. 下载镜像
 `docker pull mysql:5.7.41`
 2. 启动镜像
@@ -19,7 +19,7 @@
 3. 登录数据库（root/123456）
 4. 执行sql语句（路径：./doc/library.sql）
 
-### Redis（docker方式）
+### 2. Redis（docker方式）
 1. 下载镜像
 `docker pull redis:7.0.8`
 2. 启动镜像(指定配置文件，路径：./doc/redis.conf)
@@ -29,3 +29,10 @@
    -v 宿主机中的配置文件存放路径/redis.conf:/etc/redis/redis.conf \
    -d redis:7.0.8 redis-server /etc/redis/redis.conf
 ```
+
+### 3. 启动应用
+1. 修改 resource/application-test.xml 中对应的redis、mysql的host/port配置
+2. 启动应用
+
+### 4. 接口演示
+http://localhost:8080/swagger-ui/index.html
