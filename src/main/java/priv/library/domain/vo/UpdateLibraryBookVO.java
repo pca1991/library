@@ -5,6 +5,8 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import priv.library.annotation.ByteLength;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -20,6 +22,8 @@ public class UpdateLibraryBookVO {
      */
     @NotNull(message = "图书id不能为空")
     @ApiModelProperty(value = "图书id", example = "1")
+    @Min(value = 1, message = "图书id不能小于1")
+    @Max(value = Integer.MAX_VALUE, message = "图书id不能超过最大值")
     private Integer bookId;
     /**
      * 图书名称
