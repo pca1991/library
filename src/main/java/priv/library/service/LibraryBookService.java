@@ -3,8 +3,6 @@ package priv.library.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import priv.library.domain.po.LibraryBookPO;
 
-import java.io.Serializable;
-
 /**
  *
  */

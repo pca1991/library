@@ -1,8 +1,7 @@
 package priv.library.service;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import priv.library.domain.po.LibraryGroupPermissionPO;
 import com.baomidou.mybatisplus.extension.service.IService;
+import priv.library.domain.po.LibraryGroupPermissionPO;
 
 import java.util.List;
 

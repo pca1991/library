@@ -16,9 +16,6 @@ import priv.library.domain.base.ErrorCode;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
-import java.io.IOException;
-import java.io.InterruptedIOException;
-import java.net.SocketTimeoutException;
 import java.sql.SQLException;
 import java.util.stream.Collectors;
 

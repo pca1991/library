@@ -1,10 +1,8 @@
 package priv.library.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import org.apache.ibatis.annotations.Param;
 import priv.library.domain.po.LibraryUserPO;
-import com.baomidou.mybatisplus.extension.service.IService;
-
-import java.io.Serializable;
 
 /**
  *

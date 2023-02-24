@@ -1,6 +1,5 @@
 package priv.library.service;
 
-import priv.library.domain.po.LibraryBookPO;
 import priv.library.domain.base.CommonResult;
 import priv.library.domain.vo.AddLibraryBookVO;
 import priv.library.domain.vo.QueryLibraryBookVO;

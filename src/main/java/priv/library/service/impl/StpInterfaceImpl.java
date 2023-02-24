@@ -2,7 +2,6 @@ package priv.library.service.impl;
 
 import cn.dev33.satoken.stp.StpInterface;
 import cn.hutool.core.bean.BeanUtil;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.stereotype.Component;
 import priv.library.domain.po.LibraryGroupPermissionPO;
 import priv.library.domain.po.LibraryUserPO;
