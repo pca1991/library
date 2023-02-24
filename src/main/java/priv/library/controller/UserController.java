@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import priv.library.domain.base.CommonResult;
+import priv.library.entity.base.CommonResult;
 import priv.library.service.IUserService;
 
 import javax.annotation.Resource;

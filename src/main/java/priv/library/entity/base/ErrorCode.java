@@ -1,4 +1,4 @@
-package priv.library.domain.base;
+package priv.library.entity.base;
 
 import lombok.Getter;
 

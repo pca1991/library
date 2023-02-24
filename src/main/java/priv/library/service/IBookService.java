@@ -1,9 +1,9 @@
 package priv.library.service;
 
-import priv.library.domain.base.CommonResult;
-import priv.library.domain.vo.AddLibraryBookVO;
-import priv.library.domain.vo.QueryLibraryBookVO;
-import priv.library.domain.vo.UpdateLibraryBookVO;
+import priv.library.entity.base.CommonResult;
+import priv.library.entity.vo.AddLibraryBookVO;
+import priv.library.entity.vo.QueryLibraryBookVO;
+import priv.library.entity.vo.UpdateLibraryBookVO;
 
 /**
  * @author Austin

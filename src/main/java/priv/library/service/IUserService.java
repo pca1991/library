@@ -1,6 +1,6 @@
 package priv.library.service;
 
-import priv.library.domain.base.CommonResult;
+import priv.library.entity.base.CommonResult;
 
 /**
  * @author Austin

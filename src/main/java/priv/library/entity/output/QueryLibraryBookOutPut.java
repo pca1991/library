@@ -1,4 +1,4 @@
-package priv.library.domain.output;
+package priv.library.entity.output;
 
 import lombok.Data;
 

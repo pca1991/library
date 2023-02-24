@@ -1,7 +1,7 @@
 package priv.library.mapper;
 import org.apache.ibatis.annotations.Param;
 
-import priv.library.domain.po.LibraryUserPO;
+import priv.library.entity.po.LibraryUserPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

@@ -1,4 +1,4 @@
-package priv.library.domain.vo;
+package priv.library.entity.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

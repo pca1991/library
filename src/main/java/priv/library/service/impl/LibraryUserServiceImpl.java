@@ -3,7 +3,7 @@ package priv.library.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
-import priv.library.domain.po.LibraryUserPO;
+import priv.library.entity.po.LibraryUserPO;
 import priv.library.service.LibraryUserService;
 import priv.library.mapper.LibraryUserMapper;
 import org.springframework.stereotype.Service;

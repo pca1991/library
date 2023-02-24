@@ -3,8 +3,8 @@ package priv.library.service.impl;
 import cn.dev33.satoken.stp.StpInterface;
 import cn.hutool.core.bean.BeanUtil;
 import org.springframework.stereotype.Component;
-import priv.library.domain.po.LibraryGroupPermissionPO;
-import priv.library.domain.po.LibraryUserPO;
+import priv.library.entity.po.LibraryGroupPermissionPO;
+import priv.library.entity.po.LibraryUserPO;
 import priv.library.service.LibraryGroupPermissionService;
 import priv.library.service.LibraryUserService;
 

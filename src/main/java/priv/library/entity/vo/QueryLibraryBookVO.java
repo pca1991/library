@@ -1,4 +1,4 @@
-package priv.library.domain.vo;
+package priv.library.entity.vo;
 
 import lombok.Data;
 import priv.library.annotation.ByteLength;

@@ -1,4 +1,4 @@
-package priv.library.domain.po;
+package priv.library.entity.po;
 
 import com.baomidou.mybatisplus.annotation.*;
 
@@ -8,33 +8,45 @@ import java.time.LocalDateTime;
 import lombok.Data;
 
 /**
- * 用户组权限表
- * @TableName library_group_permission
+ * 图书馆图书表
+ * @TableName library_book
  */
-@TableName(value ="library_group_permission")
+@TableName(value ="library_book")
 @Data
-public class LibraryGroupPermissionPO implements Serializable {
+public class LibraryBookPO implements Serializable {
     /**
-     * 
+     * 图书id
      */
     @TableId(type = IdType.AUTO)
-    private Integer permissionId;
+    private Integer bookId;
 
     /**
-     * 用户组id
+     * 图书名称
      */
-    private Integer groupId;
+    private String bookName;
 
     /**
-     * 权限
+     * 图书描述
      */
-    private String permission;
+    private String bookDescription;
+
+    /**
+     * 创建人id
+     */
+    @TableField(fill = FieldFill.INSERT)
+    private Integer createBy;
 
     /**
      * 创建时间
      */
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
+
+    /**
+     * 更新人id
+     */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private Integer updateBy;
 
     /**
      * 更新时间

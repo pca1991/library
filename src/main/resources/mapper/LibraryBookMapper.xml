@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="priv.library.mapper.LibraryBookMapper">
 
-    <resultMap id="BaseResultMap" type="priv.library.domain.po.LibraryBookPO">
+    <resultMap id="BaseResultMap" type="priv.library.entity.po.LibraryBookPO">
             <id property="bookId" column="book_id" jdbcType="INTEGER"/>
             <result property="bookName" column="book_name" jdbcType="VARCHAR"/>
             <result property="bookDescription" column="book_description" jdbcType="VARCHAR"/>

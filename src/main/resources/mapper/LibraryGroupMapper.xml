@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="priv.library.mapper.LibraryGroupMapper">
 
-    <resultMap id="BaseResultMap" type="priv.library.domain.po.LibraryGroupPO">
+    <resultMap id="BaseResultMap" type="priv.library.entity.po.LibraryGroupPO">
             <id property="groupId" column="group_id" jdbcType="INTEGER"/>
             <result property="groupName" column="group_name" jdbcType="VARCHAR"/>
             <result property="state" column="state" jdbcType="CHAR"/>

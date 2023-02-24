@@ -2,9 +2,9 @@ package priv.library.service.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import org.springframework.stereotype.Service;
-import priv.library.domain.po.LibraryUserPO;
-import priv.library.domain.base.CommonResult;
-import priv.library.domain.base.ErrorCode;
+import priv.library.entity.po.LibraryUserPO;
+import priv.library.entity.base.CommonResult;
+import priv.library.entity.base.ErrorCode;
 import priv.library.service.IUserService;
 import priv.library.service.LibraryUserService;
 

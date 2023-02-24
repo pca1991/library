@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.yaml.snakeyaml.constructor.DuplicateKeyException;
-import priv.library.domain.base.CommonResult;
-import priv.library.domain.base.ErrorCode;
+import priv.library.entity.base.CommonResult;
+import priv.library.entity.base.ErrorCode;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;

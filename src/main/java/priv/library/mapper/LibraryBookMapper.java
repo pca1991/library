@@ -1,6 +1,6 @@
 package priv.library.mapper;
 
-import priv.library.domain.po.LibraryBookPO;
+import priv.library.entity.po.LibraryBookPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

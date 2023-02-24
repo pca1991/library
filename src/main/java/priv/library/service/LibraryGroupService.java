@@ -1,6 +1,6 @@
 package priv.library.service;
 
-import priv.library.domain.po.LibraryGroupPO;
+import priv.library.entity.po.LibraryGroupPO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -8,9 +8,9 @@ import io.swagger.annotations.ApiParam;
 import org.hibernate.validator.constraints.Range;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import priv.library.domain.base.CommonResult;
-import priv.library.domain.vo.AddLibraryBookVO;
-import priv.library.domain.vo.UpdateLibraryBookVO;
+import priv.library.entity.base.CommonResult;
+import priv.library.entity.vo.AddLibraryBookVO;
+import priv.library.entity.vo.UpdateLibraryBookVO;
 import priv.library.service.IBookService;
 
 import javax.annotation.Resource;

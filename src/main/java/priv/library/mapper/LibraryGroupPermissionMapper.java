@@ -2,7 +2,7 @@ package priv.library.mapper;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-import priv.library.domain.po.LibraryGroupPermissionPO;
+import priv.library.entity.po.LibraryGroupPermissionPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

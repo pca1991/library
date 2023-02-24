@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import priv.library.domain.po.LibraryGroupPermissionPO;
+import priv.library.entity.po.LibraryGroupPermissionPO;
 import priv.library.mapper.LibraryGroupPermissionMapper;
 import priv.library.service.LibraryGroupPermissionService;
 
